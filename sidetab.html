@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Side Tab</title>
+    <link rel="stylesheet" href="./sidetab.css" />
+    <script
+      src="https://kit.fontawesome.com/e0bc27586e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="leftSideBar">
+      <div class="leftSidebar-container">
+        <div class="tab-icons">
+          <div class="tab active" onclick="toggle(event,'tab-1')">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <!-- prettier-ignore -->
+          <div class="tab " onclick="toggle(event,'tab-2')">
+            <i class="fa-solid fa-circle-plus"></i>
+          </div>
+          <!-- prettier-ignore -->
+          <div class="tab " onclick="toggle(event,'tab-3')">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <!-- prettier-ignore -->
+          <div class="tab " onclick="toggle(event,'tab-4')">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+          <!-- prettier-ignore -->
+          <div class="tab " onclick="toggle(event,'tab-5')">
+            <i class="fa-solid fa-image"></i>
+          </div>
+          <!-- prettier-ignore -->
+          <div class="tab " onclick="toggle(event,'tab-6')">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+        </div>
+        <div class="leftSideBar-content">
+          <div class="leftSideBar-detail">
+            <!-- TAB1 -->
+            <ul class="content-1" id="tab-1"></ul>
+
+            <!-- TAB  2 -->
+            <ul class="content-1" id="tab-2"></ul>
+
+            <!-- TAB 3 -->
+            <ul class="content-1" id="tab-3"></ul>
+            <!-- TAB 4 -->
+            <ul class="content-1" id="tab-4"></ul>
+            <!-- TAB 5 -->
+            <ul class="content-1" id="tab-5"></ul>
+            <!-- TAB 6 -->
+            <ul class="content-1" id="tab-6"></ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script src="./sidetab.js"></script>
+  </body>
+</html>

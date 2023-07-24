@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+.leftSideBar {
+  background-color: #1c2939;
+  width: 350px;
+  min-height: 100%;
+}
+.leftSideBar-container {
+  color: white;
+  width: 350px;
+  padding-top: 50px;
+  display: flex;
+  gap: 20px;
+}
+
+.tab-icons {
+  width: 18%;
+  border-right: 4px solid rgb(22, 13, 32);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+}
+.tab:hover {
+  border: 1px solid gray;
+}
+.tab-detail {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+}
+
+ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 40px;
+  font-size: smaller;
+  cursor: pointer;
+  transition: all 5s;
+}
+#inner-icon {
+  padding: 4px;
+  border: 1px solid gray;
+}
+#selected {
+  display: flex;
+  justify-content: space-between;
+}
+.search input {
+  outline: none;
+  height: 25px;
+  width: 120px;
+  border: none;
+  padding: 5px 0px 5px 30px;
+
+  background-color: #101729;
+}
+input:focus {
+  background-color: white;
+  transition: all 1s;
+}
+.search .fa-magnifying-glass {
+  position: absolute;
+  top: 25%;
+  left: 5px;
+  z-index: 4;
+}
+li .search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.fa-greater-than {
+  font-size: 8px;
+}
+.tab.active {
+  background-color: #101729;
+}
+
+#tab-2,
+#tab-3,
+#tab-4,
+#tab-5,
+#tab-6 {
+  display: none;
+}
