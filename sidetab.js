@@ -17,6 +17,52 @@ const toggle = (event, tab) => {
 };
 
 // const tab1 = ["Base Component ", "Header", "Hero", "Content", "Blog"];
+const page_content = document.getElementById("leftSideBar");
+page_content.innerHTML = `<div class="leftSidebar-container">
+<div class="tab-icons">
+  <div class="tab active" onclick="toggle(event,'tab-1')">
+    <i class="fa-solid fa-globe"></i>
+  </div>
+  <!-- prettier-ignore -->
+  <div class="tab " onclick="toggle(event,'tab-2')">
+    <i class="fa-solid fa-circle-plus"></i>
+  </div>
+  <!-- prettier-ignore -->
+  <div class="tab " onclick="toggle(event,'tab-3')">
+    <i class="fa-solid fa-layer-group"></i>
+  </div>
+  <!-- prettier-ignore -->
+  <div class="tab " onclick="toggle(event,'tab-4')">
+    <i class="fa-solid fa-file-lines"></i>
+  </div>
+  <!-- prettier-ignore -->
+  <div class="tab " onclick="toggle(event,'tab-5')">
+    <i class="fa-solid fa-image"></i>
+  </div>
+  <!-- prettier-ignore -->
+  <div class="tab " onclick="toggle(event,'tab-6')">
+    <i class="fa-solid fa-gear"></i>
+  </div>
+</div>
+<div class="leftSideBar-content">
+  <div class="leftSideBar-detail">
+    <!-- TAB1 -->
+    <ul class="content-1" id="tab-1"></ul>
+
+    <!-- TAB  2 -->
+    <ul class="content-1" id="tab-2"></ul>
+
+    <!-- TAB 3 -->
+    <ul class="content-1" id="tab-3"></ul>
+    <!-- TAB 4 -->
+    <ul class="content-1" id="tab-4"></ul>
+    <!-- TAB 5 -->
+    <ul class="content-1" id="tab-5"></ul>
+    <!-- TAB 6 -->
+    <ul class="content-1" id="tab-6"></ul>
+  </div>
+</div>
+</div>`;
 
 const tab1_content = document.getElementById("tab-1");
 tab1_content.innerHTML = `<li id="selected" class="">
